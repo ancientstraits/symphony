@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Congressional App</title>
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<%= component :header %>
+		<h2>Log In</h2>
+		<form action="/login" method="post">
+			<% if not defined?(err).nil? %>
+				<p class="err"><%= err %></p>
+			<% end %>
+
+			<input type="text"     name="username" id="login-username" placeholder="Username">
+			<br>
+			<input type="password" name="password" id="login-password" placeholder="Password">
+			<br>
+			<input type="submit">
+		</form>
+	</body>
+</html>
