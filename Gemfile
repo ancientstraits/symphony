@@ -2,5 +2,7 @@
 
 source 'https://rubygems.org'
 
-gem 'roda'
+gem 'sinatra'
+gem 'sqlite3'
+gem 'bcrypt'
 
